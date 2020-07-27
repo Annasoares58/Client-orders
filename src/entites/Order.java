@@ -14,7 +14,6 @@ public class Order {
 	private Client client;
 	
 	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-	
 	private List<OrderItem> items = new ArrayList<>();
 	
 	public Order() {
@@ -86,6 +85,5 @@ public class Order {
 		sb.append("Total price: $");
 		sb.append(String.format("%.2f", total()));
 		return sb.toString();
-	
 	}	
 }
